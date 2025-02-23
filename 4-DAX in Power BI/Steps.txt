@@ -1,0 +1,39 @@
+Power BI - DAX Measures & Calculations
+1. Load Data
+Load the Apocalypse Food Prep - DAX Excel file into Power BI.
+2. Create a Measure for Sales Count
+Navigate to the Apocalypse Sales table and create a new measure:
+Measure Name: Count of Sales
+Formula: COUNT('Apocalypse Sales'[Order ID])
+Add a Table Visual displaying Customer Name and Count of Sales.
+3. Calculate Total Products Sold
+Add a Table Visual with Product Name from the Apocalypse Store table.
+Create a new measure in Apocalypse Sales:
+Measure Name: Sum of Products Sold
+Formula: SUM('Apocalypse Sales'[Units Sold])
+Add this measure to the Product Name Table.
+4. Calculate Profit
+Create a new measure in Apocalypse Store:
+Measure Name: Profit
+Formula: (SUM('Apocalypse Store'[Price]) - SUM('Apocalypse Store'[Production Cost])) * SUM('Apocalypse Sales'[Units Sold])
+Display Profit in a Table Visual.
+5. Identify the Highest-Spending Customer
+Add Customer Name to the Profit Table to determine the customer with the highest spending.
+6. Create Profit Columns
+In Apocalypse Store, create a new calculated column:
+Column Name: Profit_Column
+Formula: (SUM('Apocalypse Store'[Price]) - SUM('Apocalypse Store'[Production Cost])) * SUM('Apocalypse Sales'[Units Sold])
+Create another calculated column using SUMX:
+Column Name: Profit_Column_SUMX
+Formula: SUMX('Apocalypse Sales', (('Apocalypse Store'[Price]) - ('Apocalypse Store'[Production Cost])) * ('Apocalypse Sales'[Units Sold]))
+7. Analyze Sales by Day of the Week
+In Apocalypse Sales, create a new column for the day of the week:
+Column Name: Day_of_Week
+Formula: WEEKDAY('Apocalypse Sales'[Date Purchased], 2)
+Create a Stacked Column Chart:
+X-axis: Day of the Week
+Y-axis: Units Sold
+8. Classify Orders Based on Quantity
+In Apocalypse Sales, create a new column to classify order sizes:
+Column Name: Order_Size
+Formula: IF('Apocalypse Sales'[Units Sold] > 25, "Big Order", "Small Order")

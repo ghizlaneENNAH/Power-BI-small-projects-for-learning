@@ -1,0 +1,32 @@
+Power BI - Data Transformation Steps
+
+1. Load Data into Power Query Editor
+
+Open Power BI and load the dataset: Apocalypse Food Prep - Power Query Editor Tutorial.
+Open Power Query Editor to begin transformations.
+
+2. Transform Pivot Table and Purchase Overview
+
+Pivot Table Adjustments
+Change the title of the Pivot Table sheet to Pivot Table 2022 (In the left panel, under Properties).
+Purchase Overview Adjustments
+Remove the top 2 rows from the Purchase Overview (Use the "Remove Top Rows" button in Power BI).
+Use "First Row as Headers" to set the correct column names.
+Change data types to Fixed Decimal Number for numerical columns.
+Apply a filter on the Location column and remove empty values. Alternatively, in the Products column, delete rows containing the text "Total".
+Remove the Grand Total column.
+
+3. Unpivot and Rename Columns
+
+Select columns containing date values and click Unpivot Columns (This will revert to the original dataset structure).
+Change the data type of the Attribute column to Date.
+Rename:
+Value → Product_Cost
+Location → Store
+
+4. Pivot Table Sheet Adjustments
+
+Go to the Pivot Table sheet and use "First Row as Headers".
+Unpivot columns with months as titles (to structure the data properly).
+5. Save & Close
+Click Close & Apply to save changes and load the transformed data into Power BI.

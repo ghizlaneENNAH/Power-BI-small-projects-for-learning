@@ -1,0 +1,9 @@
+open the excel file
+transform the daata 
+rename date to date_purchased(u ca see the modifications in the applied steps)
+deselecte milk from product then load he data to power bi
+-- create charts 
+1 charts : select store and total price from (données)
+select histogramme empilé , add store as legend.
+2 chart : select store , product and total price ,select histogramme groupé,
+change title, add data lable (none)(go to  options choisir aucun  pour visualiser les vraies nombres

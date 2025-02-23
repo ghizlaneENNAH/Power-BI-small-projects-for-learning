@@ -1,0 +1,21 @@
+Steps for Data Transformation and Visualization in Power BI
+
+1. Data Transformation in Power BI
+
+*Open Power BI and load the Excel file.
+*In Power Query Editor, apply necessary transformations.
+*Rename the Date column to Date_Purchased (changes can be tracked in the Applied Steps pane).
+*Deselect Milk from the Product column.
+*Load the transformed data into Power BI.
+
+2. Creating Visualizations
+
+-Chart 1: Stacked Column Chart
+*Select Store and Total Price from the Données table.
+*Choose the Stacked Column Chart visualization.
+*Add Store as the Legend.
+-Chart 2: Clustered Column Chart
+*Select Store, Product, and Total Price from the dataset.
+*Choose the Clustered Column Chart visualization.
+*Update the Chart Title for better clarity.
+*Add Data Labels, then set them to None (Options → Choisir "Aucun" to display actual numbers).

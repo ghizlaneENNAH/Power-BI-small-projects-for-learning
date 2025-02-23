@@ -1,0 +1,29 @@
+Power BI - Creating Relationships & Measures
+
+1. Load Data into Power BI
+
+*Load Apocalypse Food Prep - Relationship into Power BI.
+
+2. Manage Relationships
+
+Go to the Model View to manage relationships between tables.
+Double-click on the line (relationship link) between Apocalypse Sales and Customer Information.
+Modify the primary key:
+Change Customer to Customer ID.
+Set the relationship type to "Both" (Bidirectional Filtering).
+
+3. Create a Measure in Apocalypse Store
+
+In the Apocalypse Store table, create a new measure:
+Mesure = COUNT('Apocalypse Store'[Product ID])
+
+4. Create a Table Visual
+
+Add a Table Visual in Power BI:
+Select State from the Customer Information table.
+Add the newly created measure from Apocalypse Store.
+
+5. Rebuild Relationships
+
+Delete existing relationships.
+Rebuild them by dragging the primary keys between tables in the Model View.
